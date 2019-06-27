@@ -131,6 +131,7 @@ function moveDodger(e) {
   // implement me!
     const code = e.which;
     if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
+      e.preventDefault();
   /**	
     * This function should call `moveDodgerLeft()`	  
     * if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
