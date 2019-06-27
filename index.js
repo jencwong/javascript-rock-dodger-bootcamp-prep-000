@@ -129,9 +129,17 @@ function endGame() {
 
 function moveDodger(e) {
   // implement me!
+  /**	
+    * This function should call `moveDodgerLeft()`	  
+   * if the left arrow is pressed and `moveDodgerRight()`	    e.preventDefault()
+   * if the right arrow is pressed. (Check the constants	    e.stopPropagation()
+   * we've declared for you above.)	  }
+   * And be sure to use the functions declared below!	
+    */	  
     const code = e.which;
     if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
       e.preventDefault();
+      e.stopPropagation();
   /**	
     * This function should call `moveDodgerLeft()`	  
     * if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
