@@ -163,6 +163,16 @@ function moveDodgerRight() {
      const left = positionToInteger(DODGER.style.left);
    });
 }
+
+document.addEventListener('keydown', function(e) {
+  if ( e.which === 37 ) {
+    moveDodgerLeft();
+  }
+  if ( e.which === 39 ) {
+    moveDodgerRight();
+  }
+});
+
 /**
  * @param {string} p The position property
  * @returns {number} The position as an integer (without 'px')
