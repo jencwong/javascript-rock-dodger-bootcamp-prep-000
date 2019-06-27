@@ -136,6 +136,15 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+  document.addEventListener('keydown', function(e) {
+  if ( e.which === 37 ) {
+    moveDodgerLeft();
+  }
+  if ( e.which === 39 ) {
+    moveDodgerRight();
+  }
+});
+   
 }
 
 function moveDodgerLeft() {
@@ -163,15 +172,6 @@ function moveDodgerRight() {
      const left = positionToInteger(DODGER.style.left);
    });
 }
-
-document.addEventListener('keydown', function(e) {
-  if ( e.which === 37 ) {
-    moveDodgerLeft();
-  }
-  if ( e.which === 39 ) {
-    moveDodgerRight();
-  }
-});
 
 /**
  * @param {string} p The position property
