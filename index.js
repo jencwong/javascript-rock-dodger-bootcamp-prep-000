@@ -123,6 +123,7 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval (gameInterval);
+  
 }
 
 function moveDodger(e) {
